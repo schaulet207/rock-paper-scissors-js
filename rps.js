@@ -19,10 +19,10 @@ let ties = 0;
 // Play five rounds of RPS and declare a winner
 function game(wins, losses) {
     if (wins === 5) {
-            document.getElementById("winner").innerHTML = "YOU WON!";
-        }
+            document.getElementById("winner").innerHTML = "You Win!";
+    }
     else if (losses === 5) {
-            document.getElementById("winner").innerHTML = "YOU LOST!";
+            document.getElementById("winner").innerHTML = "Computer Wins!";
         }
     }
 
@@ -60,20 +60,23 @@ rock.addEventListener('click', function() {
     console.log("Clicked Rock");
     playerSelection = "Rock";
     playRound("Rock");
-    game(wins, losses)
+    game(wins, losses);
   });
 
 paper.addEventListener('click', function() {
     console.log("Clicked Paper");
     playerSelection = "Paper";
     playRound("Paper");
+    game(wins, losses);
   });
 
 scissors.addEventListener('click', function() {
     console.log("Clicked Scissors");
     playerSelection = "Scissors";
     playRound("Scissors");
+    game(wins, losses);
   });
+
 
 // Displays current score
 document.getElementById("wins").innerHTML = wins;
