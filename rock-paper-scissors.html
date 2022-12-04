@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="rps.js" defer></script>
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
-    <div id="score">
-        <p id="wins"></div>
-        <p id="losses"></div>
-        <p id="ties"></div>
-        <p id="winner"></div>
+    <div class="container">
+        <div class="sect-1">
+            <h1>Rock, Paper, Scissors!</h1>
+            <h3 style="font-style: italic;">First to five wins!</h3>
+            <h1 style="text-decoration: none;">Make your selection:</h1>
+        </div>
+        <div class="selector">
+            <div class="rock">
+                <img src="./img/TheRock.jpg" alt="Picture of Dwayne the Rock Johnson">
+                <button id="rock">Rock</button>
+            </div>
+            <div class="paper">
+                <img src="./img/Paper.jpg" alt="Picture of a piece of lined yellow paper">
+                <button id="paper">Paper</button>
+            </div>
+            <div class="scissors">
+            <img src="./img/Scissors.jpg" alt="Picture of a pair of scissors">
+            <button id="scissors">Scissors</button>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <div class="wins">
+                <h2>Wins</h2>
+                <div id="wins"></div>
+            </div>
+            <div class="losses">
+                <h2>Losses</h2>
+                <h2 id="losses"></h2>
+            </div>
+            <div class="ties">
+                <h2>Ties</h2>
+                <h2 id="ties"></h2>
+            </div>
+            <h2 id="winner"></div>
+       <!--- </div>
+         <div id="score">
+            <h2 id="wins"></div>
+            <h2 id="losses"></div>
+            <h2 id="ties"></div>
+            <h2 id="winner"></div>
+        </div> -->
     </div>
 </body>
 </html>

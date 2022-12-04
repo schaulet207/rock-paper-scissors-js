@@ -31,31 +31,22 @@ function game(wins, losses) {
         getComputerChoice();
         if (playerSelection === 'Rock' && computerChoice === 'Rock') {
             ties++;
-            alert("It's a tie!");
         } else if (playerSelection === 'Paper' && computerChoice === 'Paper') {
             ties++;
-            alert("It's a tie!");
         } else if (playerSelection === 'Scissors' && computerChoice === 'Scissors') {
             ties++;
-            alert("It's a tie!");
         } else if (playerSelection === 'Rock' && computerChoice === 'Scissors') {
             wins++;
-            alert("You win! Your rock beats computers Scissors!");
         } else if (playerSelection === 'Paper' && computerChoice === 'Rock') {
             wins++;
-            alert("You win! Your paper beats computers rock!");
         } else if (playerSelection === 'Scissors' && computerChoice === 'Paper') {
             wins++;
-            alert("You win! Your scissors beats computers paper!");
         } else if (playerSelection === 'Rock' && computerChoice === 'Paper') {
             losses++;
-            alert("You lost! Computers paper beats your rock!");
         } else if (playerSelection === 'Paper' && computerChoice === 'Scissors') {
             losses++;
-            alert("You lost! Computers scissors beats your paper!");
         } else if (playerSelection === 'Scissors' && computerChoice === 'Rock') {
             losses++;
-            alert("You lost! Computers rock beats your scissors!");
         } else {
             alert('Invalid input');
         }
@@ -88,4 +79,4 @@ scissors.addEventListener('click', function() {
 document.getElementById("wins").innerHTML = wins;
 document.getElementById("losses").innerHTML = losses;
 document.getElementById("ties").innerHTML = ties;
-document.getElementById("winner").innerHTML = "First to five wins!";
+document.getElementById("winner").innerHTML = "Winner...";
