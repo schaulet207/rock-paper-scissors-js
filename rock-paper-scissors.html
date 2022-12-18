@@ -18,42 +18,77 @@
             </div>
             <div class="right">
                 <ul class="links">
-                    <li><a href="www.linkedin.com/in/schaulet">header link one</a></li>
-                    <li><a href="google.com">header link two</a></li>
-                    <li><a href="google.com">header link three</a></li>
+                    <li><a href="www.linkedin.com/in/schaulet">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
         <div class="sect-1">
-            <h1 style="text-decoration: underline;">Rock, Paper, Scissors!</h1>
-            <h3 style="font-style: italic;">First to five wins!</h3>
-            <h1 style="text-decoration: underline;">Make your selection:</h1>
+            <div class="rps">Rock, Paper, Scissors!<br><br>a design by Shannon Chaulet</div>
+            <div class="rightside">
+                <div class="rps2">First to five wins!</div>
+                <div class="rps3">Choose your weapon below:</div>
+            </div>
+        </div>
+        <div class="round">
+            <div class="player">
+                <div>
+                    <h3 id="yourpick"></h3>
+                </div>
+                <div>
+                    <div id="rocksymbol1" class="hidden"></div>
+                    <div id="papersymbol1" class="hidden"></div>
+                    <div id="scissorssymbol1" class="hidden"></div>
+                </div>
+            </div>
+            <div class="results">
+                <div>
+                    <h2 id="roundresults"></h2>
+                </div>
+                <div>
+                    <p id="roundpicks"></p>
+                </div>
+            </div>
+            <div class="computer">
+                <div>
+                    <h3 id="comppick"></h3>
+                </div>
+                <div>
+                    <div id="rocksymbol2" class="hidden"></div>
+                    <div id="papersymbol2" class="hidden"></div>
+                    <div id="scissorssymbol2" class="hidden"></div>
+                </div>
+            </div>
         </div>
         <div class="selector">
             <div class="rock">
-                <button id="rock"><img src="./img/TheRock.jpg" alt="Picture of Dwayne the Rock Johnson">ROCK</button>
+                <button id="rock"><img src="./img/TheRock.jpg" style="height:300px;width:300px;" alt="Picture of Dwayne the Rock Johnson">ROCK</button>
             </div>
             <div class="paper">
-                <button id="paper"><img src="./img/Paper.jpg" alt="Picture of a piece of lined yellow paper">PAPER</button>
+                <button id="paper"><img src="./img/Paper.jpg" style="height:300px;width:300px;" alt="Picture of a piece of lined yellow paper">PAPER</button>
             </div>
             <div class="scissors">
-            <button id="scissors"><img src="./img/Scissors.jpg" alt="Picture of a pair of scissors">SCISSORS</button>
+            <button id="scissors"><img src="./img/Scissors.jpg" style="height:300px;width:300px;" alt="Picture of a pair of scissors">SCISSORS</button>
             </div>
         </div>
         <div class="scoreboard">
             <div class="wins">
-                <h2 style="text-decoration: underline;">Wins</h2>
+                <h2>Player:</h2>
                 <h2 id="wins"></h2>
             </div>
             <div class="losses">
-                <h2 style="text-decoration: underline;">Losses</h2>
+                <h2>Computer:</h2>
                 <h2 id="losses"></h2>
             </div>
             <div class="ties">
-                <h2 style="text-decoration: underline;">Ties</h2>
+                <h2>Ties</h2>
                 <h2 id="ties"></h2>
             </div>
-            <h2 style="text-decoration: underline;" id="winner"></div>
     </div>
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg">Game over!</p>
+        <h2 id="winner"></h2>
+        <button class="btn btn-restart" id="restartBtn">Play again?</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
 </body>
 </html>
