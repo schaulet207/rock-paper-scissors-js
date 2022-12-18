@@ -64,18 +64,30 @@ function game(wins, losses) {
 // Play a single round of RPS
     function playRound() {
         getComputerChoice();
+
         var rockSymbolElement = document.getElementById("rocksymbol1");
         var paperSymbolElement = document.getElementById("papersymbol1");
         var scissorsSymbolElement = document.getElementById("scissorssymbol1");
-        rockSymbolElement.classList.add("hidden");
-        paperSymbolElement.classList.add("hidden");
-        scissorsSymbolElement.classList.add("hidden");
         var rockSymbolElement2 = document.getElementById("rocksymbol2");
         var paperSymbolElement2 = document.getElementById("papersymbol2");
         var scissorsSymbolElement2 = document.getElementById("scissorssymbol2");
+        var roundresults = document.getElementById("roundresults");
+        var roundpicks = document.getElementById("roundpicks");
+        var yourpick = document.getElementById("yourpick");
+        var comppick = document.getElementById("comppick");
+
+        rockSymbolElement.classList.add("hidden");
+        paperSymbolElement.classList.add("hidden");
+        scissorsSymbolElement.classList.add("hidden");
         rockSymbolElement2.classList.add("hidden");
         paperSymbolElement2.classList.add("hidden");
         scissorsSymbolElement2.classList.add("hidden");
+        roundresults.classList.add("hidden");
+        roundpicks.classList.add("hidden");
+        yourpick.classList.add("hidden");
+        comppick.classList.add("hidden");
+
+
         if (playerSelection === 'Rock' && computerChoice === 'Rock') {
             ties++;
             document.getElementById("roundresults").innerHTML = "It's a tie!";
