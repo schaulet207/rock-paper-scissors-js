@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="rps.js" defer></script>
     <title>Rock, Paper, Scissors</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="left">
                 <div class="logo">
-                    github.com/schaulet207
+                    <a>Copyright © 2022 Shannon Chaulet</a>
                 </div>
             </div>
             <div class="right">
                 <ul class="links">
-                    <li><a href="www.linkedin.com/in/schaulet">LinkedIn</a></li>
+                    <li><a href="https://www.github.com/schaulet207">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/schaulet">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
         <div class="sect-1">
             <div class="rps">Rock, Paper, Scissors!<br><br>a design by Shannon Chaulet</div>
             <div class="rightside">
-                <div class="rps2">First to five wins!</div>
-                <div class="rps3">Choose your weapon below:</div>
+                <a>First to five wins!</a>
+                <a>Choose your weapon below:</a>
             </div>
         </div>
         <div class="round">
@@ -85,6 +90,7 @@
             </div>
     </div>
     <div class="modal" id="endgameModal">
+        <button class="close" id="closeBtn">Close</button>
         <p class="modal-title" id="endgameMsg">Game over!</p>
         <h2 id="winner"></h2>
         <button class="btn btn-restart" id="restartBtn">Play again?</button>

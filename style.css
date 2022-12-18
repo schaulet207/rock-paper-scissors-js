@@ -48,11 +48,12 @@ p#endgameMsg.modal-title {
     appearance: auto;
     font-family: 'Roboto', sans-serif;
     line-height: 2.6;
+    font-weight: bold;
 }
 
 div#endgameModal.modal.active {
     padding: 10px 200px;
-    border-radius: 50px;
+    border-radius: 1rem;
 }
 
 button#restartBtn.btn.btn-restart {
@@ -63,6 +64,21 @@ button#restartBtn.btn.btn-restart {
     font-size: 56px;
     color: white;
 }
+
+button.close {
+    padding-left: 400px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: column;
+    width: 30px;
+    font-size: 20px;
+    color: #c0c5cb;
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
 
 .links {
     display: flex;
@@ -174,7 +190,7 @@ h2#roundresults {
 .scoreboard {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: 25%;
     padding-right: 25%;
     padding-bottom: 2%;
@@ -203,30 +219,10 @@ h2#roundresults {
     text-align: center;
     color: white;
     font-family: Impact, fantasy;
-    font-size: 2vw;
+    font-size: 1vw;
     justify-content: center;
     padding: 5%;
 } 
-
-.rps2 {
-    text-align: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1vw;
-    padding: 5%;
-    padding-top: 60px;
-    padding-bottom: 0%;
-}
-
-.rps3 {
-    text-align: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-    font-size: 2vw;
-    padding: 10%;
-    padding-top: 4%;
-}
 
  .rightside {
     display: flex;
@@ -235,11 +231,10 @@ h2#roundresults {
     justify-content: center;
 }
 
-
 .sect-1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 1%;
@@ -326,7 +321,7 @@ button#scissors:hover {
     left: 50%;
     width: 300px;
     padding: 30px;
-    border-radius: 20%;
+    border-radius: 1rem;
     background-color: var(--primary-dark);
     text-align: center;
     font-size: 30px;
@@ -408,3 +403,13 @@ h2#losses {
     justify-content: center;
     color: white;
 }
+
+.fa-github {
+    color: var(--primary-light);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }

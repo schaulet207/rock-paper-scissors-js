@@ -213,8 +213,9 @@ function closeEndgameModal() {
     overlay.classList.remove('active')
   }
 
-  // Clicking anywhere outside of end game pop-up closes it
+  // Clicking either the close button or outside of end game pop-up closes it
   overlay.addEventListener('click', closeEndgameModal)
+  closeBtn.addEventListener('click', closeEndgameModal)
 
   // Restarts game by clicking Play Again? button
   restartBtn.addEventListener('click', function() {
